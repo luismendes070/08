@@ -5,13 +5,13 @@ import express from "express";
 import { router } from "./routes";
 
 import cors from 'cors';
-const app = express()
+const app = express();
  
-app.use(cors())
+app.use(cors());
  
 // ChatGPT jest
 app.get('/cities/:id', function(req, res, next) {
-  res.json({msg: 'This is CORS-enabled for all origins!'})
+  res.json({msg: 'This is CORS-enabled for all origins!'});
 }
 // app.get('/cities/:id', function (req:any, res:any, next:any) {
   // res.json({msg: 'This is CORS-enabled for all origins!'})
