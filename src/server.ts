@@ -17,7 +17,7 @@ app.get('/cities/:id', function(req, res, next) {
   // res.json({msg: 'This is CORS-enabled for all origins!'})
 // })
 
-// Use o middleware de gerenciamento de erros
+// Use error handling middleware
 app.use(errorHandler);
 
 app.get('/api/csv-to-json', (req:any, res:any) => {
