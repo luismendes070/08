@@ -9,9 +9,13 @@ const app = express()
  
 app.use(cors())
  
-app.get('/cities/:id', function (req:any, res:any, next:any) {
+// ChatGPT jest
+app.get('/cities/:id', function(req, res, next) {
   res.json({msg: 'This is CORS-enabled for all origins!'})
-})
+}
+// app.get('/cities/:id', function (req:any, res:any, next:any) {
+  // res.json({msg: 'This is CORS-enabled for all origins!'})
+// })
 
 // Use o middleware de gerenciamento de erros
 app.use(errorHandler);
@@ -53,3 +57,5 @@ app.listen(
     3002,
     () => console.log("Server is running")
 );
+
+export { app };
