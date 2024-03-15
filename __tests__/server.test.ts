@@ -6,7 +6,7 @@ import app from './../src/server'; // Assuming your Express server is configured
 describe('Express server', () => {
   it('returns CSV data for authenticated users', async () => {
     // Mock authentication token (JWT)
-    const authToken = 'fake-auth-token';
+    const authToken = '${AUTH_TOKEN}';
 
     // Make request to CSV endpoint with authentication token
     const response = await request(app)
