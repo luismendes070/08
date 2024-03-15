@@ -1,5 +1,7 @@
+import cors from 'cors';
 const express = require('express');
 const app = express();
+app.use(cors());
 const { auth } = require('express-oauth2-jwt-bearer');
 
 const port = process.env.PORT || 8080;

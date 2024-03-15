@@ -1,8 +1,10 @@
 // ChatGPT 
 // src/index.ts
 import express, { Request, Response, NextFunction } from 'express';
+import cors from 'cors';
 
 const app = express();
+app.use(cors());
 const port = 3000;
 
 // Middleware to log requests
