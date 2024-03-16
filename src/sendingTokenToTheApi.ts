@@ -2,7 +2,7 @@ const axios = require("axios");
 
 const options = { 
   method: "GET",
-  url: "${URL}",
+  url: "${API}",
   headers: { "authorization": "Bearer TOKEN" },
 };
 
